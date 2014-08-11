@@ -1,0 +1,13 @@
+{
+	"name": "the-wedding-page",
+	"description": "Beautiful open source wedding page.",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"angular": "1.2.19",
+		"angular-resource": "1.2.19",
+		"angular-sanitize": "1.2.19"
+	},
+	"devDependencies": {
+	}
+}
