@@ -156,7 +156,7 @@ module.exports = function(grunt) {
 				tasks: ['jshint', 'browserify:app']
 			},
 			html: {
-				files: ['web/**/*.html'],
+				files: ['web/**/*.html', 'web/img/**/*'],
 				tasks: ['copy:build']
 			}
 		}
