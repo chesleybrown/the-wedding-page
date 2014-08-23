@@ -29,112 +29,76 @@ angular
 		
 		
 		// groomsmen.$push({
-		// 	name: 'Jared Perry',
+		// 	firstname: 'Jared',
+		// 	lastname: 'Perry',
 		// 	accepted: false,
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 6;
-		// 	groomsman.$save();
 		// });
 		// groomsmen.$push({
-		// 	name: 'Donal Mac An Ri',
+		// 	firstname: 'Donal',
+		// 	lastname: 'Mac An Ri',
 		// 	username: 'donalmacanri',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 5;
-		// 	groomsman.$save();
 		// });
 		// groomsmen.$push({
-		// 	name: 'Stephen Brown',
+		// 	firstname: 'Stephen',
+		// 	lasstname: 'Brown',
 		// 	username: 'stephenbrown84',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 4;
-		// 	groomsman.$save();
 		// });
 		// groomsmen.$push({
-		// 	name: 'Zachary Brown',
+		// 	firstname: 'Zachary',
+		// 	lastname: 'Brown',
 		// 	username: 'Zach.D.Brown',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 3;
-		// 	groomsman.$save();
 		// });
 		// groomsmen.$push({
-		// 	name: 'Randy Way',
+		// 	firstname: 'Randy',
+		// 	lasatname: 'Way',
 		// 	username: 'Rway6',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 2;
-		// 	groomsman.$save();
 		// });
 		// groomsmen.$push({
-		// 	name: 'Ern Way',
+		// 	fistname: 'Ern',
+		// 	lastname: 'Way',
 		// 	username: 'ern.way.7',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var groomsman = $firebase(ref);
-		// 	groomsman.$priority = 1;
-		// 	groomsman.$save();
 		// });
 		
 		// bridesmaids.$push({
-		// 	name: 'Deanna Way',
+		// 	firstname: 'Deanna',
+		// 	lastname: 'Way',
 		// 	username: 'deanna.way.5',
 		// 	accepted: true
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 6;
-		// 	bridesmaid.$save();
 		// });
 		// bridesmaids.$push({
-		// 	name: 'Tamara Way',
+		// 	firstname: 'Tamara',
+		// 	lastname: 'Way',
 		// 	username: 'tamara.macdonald.9',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 5;
-		// 	bridesmaid.$save();
 		// });
 		// bridesmaids.$push({
-		// 	name: 'Kayla Gould',
+		// 	firstname: 'Kayla',
+		// 	lastname: 'Gould',
 		// 	username: 'kayla.white.37454',
 		// 	accepted: false
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 4;
-		// 	bridesmaid.$save();
 		// });
 		// bridesmaids.$push({
-		// 	name: 'Melissa Beresford',
+		// 	firstname: 'Melissa',
+		// 	lastname: 'Beresford',
 		// 	username: 'melissakberesford',
 		// 	accepted: true
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 3;
-		// 	bridesmaid.$save();
 		// });
 		// bridesmaids.$push({
-		// 	name: 'Stacie Wakeham',
+		// 	firstname: 'Stacie',
+		// 	lastname: 'Wakeham',
 		// 	username: 'staciewakeham',
 		// 	accepted: true
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 2;
-		// 	bridesmaid.$save();
 		// });
 		// bridesmaids.$push({
-		// 	name: 'Emma Brown',
+		// 	firstname: 'Emma',
+		// 	lastname: 'Brown',
 		// 	username: 'emma.brown.7967',
 		// 	accepted: true
-		// }).then(function(ref) {
-		// 	var bridesmaid = $firebase(ref);
-		// 	bridesmaid.$priority = 1;
-		// 	bridesmaid.$save();
 		// });
 	})
 ;

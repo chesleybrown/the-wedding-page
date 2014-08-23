@@ -1,59 +1,53 @@
-<div class="content">
+<div class="content groomsmen-container">
 	<div class="bridal-party">
-		<div class="bride-groom">
-			<div class="row">
-				<div class="pure-g">
-					<div class="pure-u-11-24">
-						<div class="groom-side">
-							<div class="row">
-								<div class="pure-u-12-12">
-									<span class="name">Chesley Brown</span>
-									<div class="circle" style="background-image: url(http://avatars.io/facebook/chesleybrown?size=large);"></div>
-								</div>
-							</div>
-							<div class="groomsman">
-								<div ng-repeat="groomsman in groomsmen" class="row">
-									<div class="pure-u-12-12">
-										<span class="name">
-											<span ng-if="groomsman.accepted">{{groomsman.name}}</span>
-											<span ng-if="!groomsman.accepted">??? ???</span>
-										</span>
-										<div class="circle-container">
-											<div class="circle" ng-if="groomsman.accepted && groomsman.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + groomsman.username + '?size=large'}"></div>
-											<div class="circle" ng-if="!groomsman.accepted || !groomsman.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg'}"></div>
-											<i ng-if="groomsman.accepted" class="tick fa fa-check-circle"></i>
-										</div>
-									</div>
-								</div>
-							</div>
+		<div class="groom-side">
+			<div class="groomsman">
+				<div ng-repeat="groomsman in groomsmen" class="pure-g">
+					<div class="pure-u-23-24">
+						<span class="name">
+							<span ng-if="groomsman.accepted">
+								<span class="firstname">{{groomsman.firstname}}</span>
+								<span class="lastname">{{groomsman.lastname}}</span>
+							</span>
+							<span ng-if="!groomsman.accepted">
+								<span class="firstname">???</span>
+								<span class="lastname">???</span>
+							</span>
+						</span>
+						<div class="circle-container">
+							<div class="circle" ng-if="groomsman.accepted && groomsman.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + groomsman.username + '?size=large)'}"></div>
+							<div class="circle" ng-if="!groomsman.accepted || !groomsman.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg)'}"></div>
+							<i ng-if="groomsman.accepted" class="tick fa fa-check-circle"></i>
 						</div>
 					</div>
-					<div class="pure-u-2-24">
-						<div class="heart fa fa-heart"></div>
-					</div>
-					<div class="pure-u-11-24">
-						<div class="bride-side">
-							<div class="row">
-								<div class="pure-u-12-12">
-									<span class="name">Tiffany White</span>
-									<div class="circle" style="background-image: url(http://avatars.io/facebook/tiffanywhite140?size=large);"></div>
-								</div>
-							</div>
-							<div class="bridesmaid">
-								<div ng-repeat="bridesmaid in bridesmaids" class="row">
-									<div class="pure-u-12-12">
-										<span class="name">
-											<span ng-if="bridesmaid.accepted">{{bridesmaid.name}}</span>
-											<span ng-if="!bridesmaid.accepted">??? ???</span>
-										</span>
-										<div class="circle-container">
-											<div class="circle" ng-if="bridesmaid.accepted && bridesmaid.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + bridesmaid.username + '?size=large'}"></div>
-											<div class="circle" ng-if="!bridesmaid.accepted || !bridesmaid.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg'}"></div>
-											<i ng-if="bridesmaid.accepted" class="tick fa fa-check-circle"></i>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="pure-u-1-24"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content bridesmaids-container">
+	<div class="bridal-party">
+		<div class="bride-side">
+			<div class="bridesmaid">
+				<div ng-repeat="bridesmaid in bridesmaids" class="pure-g">
+					<div class="pure-u-1-24"></div>
+					<div class="pure-u-23-24">
+						<span class="name">
+							<span ng-if="bridesmaid.accepted">
+								<span class="firstname">{{bridesmaid.firstname}}</span>
+								<span class="lastname">{{bridesmaid.lastname}}</span>
+							</span>
+							<span ng-if="!bridesmaid.accepted">
+								<span class="firstname">???</span>
+								<span class="lastname">???</span>
+							</span>
+						</span>
+						<div class="circle-container">
+							<div class="circle" ng-if="bridesmaid.accepted && bridesmaid.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + bridesmaid.username + '?size=large)'}"></div>
+							<div class="circle" ng-if="!bridesmaid.accepted || !bridesmaid.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg)'}"></div>
+							<i ng-if="bridesmaid.accepted" class="tick fa fa-check-circle"></i>
 						</div>
 					</div>
 				</div>
@@ -61,6 +55,8 @@
 		</div>
 	</div>
 </div>
+
+<div class="clear-fix"></div>
 
 <div class="ribbon l-box-lrg pure-g">
 	<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">

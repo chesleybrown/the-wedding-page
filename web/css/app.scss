@@ -1,3 +1,5 @@
+@import 'bourbon';
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -72,15 +74,40 @@ label {
 	background-repeat: no-repeat;
 }
 
-.bridal-party {
-	margin: -100px auto 0;
+.clear-fix {
+	clear: both;
+}
+
+.bride-groom {
+	position: absolute;
+	top: 0;
+	height: 300px;
+	width: 100%;
 	text-align: center;
+	padding: 0;
+	z-index: 1000;
 	
+	.bridal-party {
+		position: absolute;
+		bottom: -30px;
+		width: 100%;
+		
+		.name {
+			display: none;
+		}
+	}
+}
+
+.bridal-party {
 	.name {
 		color: white;
 		text-shadow: 1px 1px #666;
 		line-height: 100px;
 		margin: 10px;
+		
+		.lastname {
+			display: none;
+		}
 	}
 	.bride-side {
 		text-align: left;
@@ -91,6 +118,7 @@ label {
 		}
 	}
 	.heart {
+		display: none;
 		padding-top: 25px;
 		color: white;
 		font-size: 50px;
@@ -105,9 +133,11 @@ label {
 		}
 	}
 	.bridesmaid {
+		margin-top: 10px;
+		
 		.name {
-			color: #333;
-			text-shadow: none;
+			color: #666;
+			text-shadow: 1px 1px #fff;
 			line-height: 50px;
 		}
 		.circle-container,
@@ -118,9 +148,11 @@ label {
 		}
 	}
 	.groomsman {
+		margin-top: 10px;
+		
 		.name {
-			color: #333;
-			text-shadow: none;
+			color: #666;
+			text-shadow: 1px 1px #fff;
 			line-height: 50px;
 		}
 		.circle-container,
@@ -131,9 +163,32 @@ label {
 		}
 	}
 	
-	.row {
+	.pure-g {
 		margin-bottom: 20px;
 	}
+}
+
+.groomsmen-container {
+	min-height: 400px;
+	width: 50%;
+	float: left;
+	background-image: url(/img/groomsmen.png);
+	// background-color: #fff;
+	// background-image: radial-gradient(#F1F8FF 15%, transparent 16%),
+	// radial-gradient(#F1F8FF 15%, transparent 16%);
+	// background-size:60px 60px;
+	// background-position: 0 0, 30px 30px;
+}
+.bridesmaids-container {
+	min-height: 400px;
+	width: 50%;
+	float: right;
+	background-image: url(/img/bridesmaids.png);
+	// background-color: #fff;
+	// background-image: radial-gradient(#FFF5FF 15%, transparent 16%),
+	// radial-gradient(#FFF5FF 15%, transparent 16%);
+	// background-size:60px 60px;
+	// background-position: 0 0, 30px 30px;
 }
 
 /*
@@ -226,7 +281,9 @@ a.pure-button-primary {
 	overflow: hidden;
 	/* The following styles are required for the "scroll-over" effect */
 	width: 100%;
+	margin: 0 auto;
 	height: 88%;
+	min-height: 300px;
 	top: 0;
 	left: 0;
 	position: fixed !important;
@@ -235,10 +292,13 @@ a.pure-button-primary {
 .splash {
 	/* absolute center .splash within .splash-container */
 	width: 80%;
-	height: 50%;
+	height: 75%;
 	margin: auto;
 	position: absolute;
-	top: -250px; left: 0; bottom: 0; right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -250,14 +310,16 @@ h1.splash-head {
 	border-radius: 5px;
 	color: #fff;
 	font-size: 40px;
-	text-shadow: 1px 1px #666;
+	text-shadow: 0 0 15px #000;
 	font-weight: 100;
 	line-height: 1em;
+	margin: 0;
+	padding: 0;
 }
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-	text-shadow: 1px 1px #666;
+	text-shadow: 0 0 15px #000;
 	color: white;
 	letter-spacing: 0.05em;
 	opacity: 0.8;
@@ -270,15 +332,11 @@ h1.splash-head {
 .content-wrapper {
 	/* These styles are required for the "scroll-over" effect */
 	position: absolute;
-	top: 87%;
+	top: 300px;
 	width: 100%;
 	min-height: 12%;
 	z-index: 2;
-	background-color: #fff;
-	background-image: radial-gradient(#FFF5FF 15%, transparent 16%),
-	radial-gradient(#FFF5FF 15%, transparent 16%);
-	background-size:60px 60px;
-	background-position: 0 0, 30px 30px;
+	background: #fff;
 }
 
 /* This is the class used for the main content headers (<h2>) */
@@ -297,10 +355,11 @@ h1.splash-head {
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
 	color: #1f8dd6;
-}
-	.content-subhead i {
+	
+	i {
 		margin-right: 7px;
 	}
+}
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
@@ -333,10 +392,11 @@ h1.splash-head {
 	menu items to the right. */
 	.home-menu {
 		text-align: left;
-	}
-		.home-menu ul {
+		
+		ul {
 			float: right;
 		}
+	}
 
 	/* We increase the height of the splash-container */
 /*    .splash-container {
@@ -346,12 +406,37 @@ h1.splash-head {
 	/* We decrease the width of the .splash, since we have more width
 	to work with */
 	.splash {
-		width: 50%;
 		height: 50%;
 	}
 
 	.splash-head {
 		font-size: 250%;
+	}
+	
+	.content-wrapper {
+		top: 87%;
+	}
+	
+	.bride-groom {
+		height: 88%;
+	}
+	.bridal-party {
+		.heart {
+			display: block;
+		}
+		.name {
+			.lastname {
+				display: inline;
+			}
+		}
+	}
+	
+	.bride-groom {
+		.bridal-party {
+			.name {
+				display: inline;
+			}
+		}
 	}
 
 
