@@ -47,6 +47,7 @@ module.exports = function(grunt) {
 			app: {
 				options: {
 					globals: {
+						_: true,
 						angular: true,
 						alert: true,
 						confirm: true,
@@ -114,6 +115,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'build/js/deps.js': [
+						'web/components/lodash/dist/lodash.js',
 						'web/components/angular/angular.js',
 						'web/components/angular-route/angular-route.js',
 						'web/components/angularfire/dist/angularfire.min.js',
