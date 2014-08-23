@@ -9,3 +9,6 @@ web/components
 
 # build
 build
+
+# config
+.config.json

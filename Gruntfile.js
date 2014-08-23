@@ -5,29 +5,6 @@ module.exports = function(grunt) {
 	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		browserify: {
-			app: {
-				options: {
-					bundleOptions: {
-						debug: true
-					}
-				},
-				files: {
-					'build/js/app.js': [
-						'web/js/*.js',
-					]
-				}
-			},
-			deps: {
-				files: {
-					'build/js/deps.js': [
-						'web/components/angular/angular.js',
-						'web/components/angular-resource/angular-resource.js',
-						'web/components/angular-sanitize/angular-sanitize.js'
-					]
-				}
-			}
-		},
 		connect: {
 			options: {
 				port: 8080,
@@ -72,7 +49,8 @@ module.exports = function(grunt) {
 					globals: {
 						angular: true,
 						alert: true,
-						confirm: true
+						confirm: true,
+						Firebase: true
 					}
 				},
 				files: {
@@ -113,9 +91,38 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			build: {
+			options: {
+				mangle: false
+			},
+			app: {
 				options: {
-					banner: '/* <%= pkg.name %> build <%= pkg.version %> */',
+					sourceMap: true,
+					sourceMapIncludeSources: true,
+					compress: false,
+					beautify: true
+				},
+				files: {
+					'build/js/app.js': [
+						'web/js/*.js'
+					]
+				}
+			},
+			deps: {
+				options: {
+					compress: false,
+					beautify: true
+				},
+				files: {
+					'build/js/deps.js': [
+						'web/components/angular/angular.js',
+						'web/components/angular-route/angular-route.js',
+						'web/components/angularfire/dist/angularfire.min.js',
+						'web/components/firebase/firebase.js'
+					]
+				}
+			},
+			compress: {
+				options: {
 					mangle: false
 				},
 				files: {
@@ -124,15 +131,26 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		ngconstant: {
+			options: {
+				space: '	',
+				name: 'config.app',
+				dest: 'build/js/app.config.js'
+			},
+			build: {
+				constants: grunt.file.readJSON('config.json')
+			}
+		},
 		build: {
 			compile: [
 				'sass:build',
-				'browserify:deps',
-				'browserify:app',
+				'uglify:app',
+				'uglify:deps',
+				'ngconstant',
 				'copy:build'
 			],
 			compress: [
-				'uglify:build',
+				'uglify:compress',
 				'cssmin:build'
 			],
 			dist: [
@@ -153,7 +171,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: ['web/js/**/*.js'],
-				tasks: ['jshint', 'browserify:app']
+				tasks: ['jshint', 'uglify:app']
 			},
 			html: {
 				files: ['web/**/*.html', 'web/img/**/*'],

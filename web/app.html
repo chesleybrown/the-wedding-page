@@ -1,0 +1,97 @@
+<div class="content">
+	<div class="bridal-party">
+		<div class="bride-groom">
+			<div class="row">
+				<div class="pure-g">
+					<div class="pure-u-11-24">
+						<div class="groom-side">
+							<div class="row">
+								<div class="pure-u-12-12">
+									<span class="name">Chesley Brown</span>
+									<div class="circle" style="background-image: url(http://avatars.io/facebook/chesleybrown?size=large);"></div>
+								</div>
+							</div>
+							<div class="groomsman">
+								<div ng-repeat="groomsman in groomsmen" class="row">
+									<div class="pure-u-12-12">
+										<span class="name">
+											<span ng-if="groomsman.accepted">{{groomsman.name}}</span>
+											<span ng-if="!groomsman.accepted">??? ???</span>
+										</span>
+										<div class="circle-container">
+											<div class="circle" ng-if="groomsman.accepted && groomsman.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + groomsman.username + '?size=large'}"></div>
+											<div class="circle" ng-if="!groomsman.accepted || !groomsman.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg'}"></div>
+											<i ng-if="groomsman.accepted" class="tick fa fa-check-circle"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pure-u-2-24">
+						<div class="heart fa fa-heart"></div>
+					</div>
+					<div class="pure-u-11-24">
+						<div class="bride-side">
+							<div class="row">
+								<div class="pure-u-12-12">
+									<span class="name">Tiffany White</span>
+									<div class="circle" style="background-image: url(http://avatars.io/facebook/tiffanywhite140?size=large);"></div>
+								</div>
+							</div>
+							<div class="bridesmaid">
+								<div ng-repeat="bridesmaid in bridesmaids" class="row">
+									<div class="pure-u-12-12">
+										<span class="name">
+											<span ng-if="bridesmaid.accepted">{{bridesmaid.name}}</span>
+											<span ng-if="!bridesmaid.accepted">??? ???</span>
+										</span>
+										<div class="circle-container">
+											<div class="circle" ng-if="bridesmaid.accepted && bridesmaid.username" ng-style="{'background-image': 'url(http://avatars.io/facebook/' + bridesmaid.username + '?size=large'}"></div>
+											<div class="circle" ng-if="!bridesmaid.accepted || !bridesmaid.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg'}"></div>
+											<i ng-if="bridesmaid.accepted" class="tick fa fa-check-circle"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ribbon l-box-lrg pure-g">
+	<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+		<i class="fa fa-map-marker" style="font-size: 120px;"></i>
+	</div>
+	<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+		
+		<h2 class="content-head content-head-ribbon">Location to be determined</h2>
+		
+		<p>
+			Check back later when we have more things planned.
+		</p>
+	</div>
+</div>
+
+<div class="content">
+	<h2 class="content-head is-center">We will probably put more cool information here.</h2>
+	
+	<div class="pure-g">
+		<div class="l-box-lrg pure-u-1 pure-u-md-2-5 is-center">
+			<i class="fa fa-info-circle" style="font-size: 120px;"></i>
+		</div>
+		
+		<div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+			<h4>Just Don't Know What yet</h4>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</div>
+	</div>
+</div>
