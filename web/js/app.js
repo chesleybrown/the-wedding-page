@@ -25,9 +25,11 @@ angular
 			if ($routeParams.username) {
 				if ($routeParams.party === 'groomsmen') {
 					$scope.person = _.find($scope.groomsmen, {username: $routeParams.username});
+					$scope.groomsman = true;
 				}
 				else if ($routeParams.party === 'bridesmaids') {
 					$scope.person = _.find($scope.bridesmaids, {username: $routeParams.username});
+					$scope.bridesmaid = true;
 				}
 			}
 		};

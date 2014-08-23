@@ -134,11 +134,18 @@ label {
 	}
 	.bridesmaid {
 		margin-top: 10px;
+		position: relative;
 		
 		.name {
 			color: #666;
 			text-shadow: 1px 1px #fff;
 			line-height: 50px;
+		}
+		.best {
+			font-size: 10px;
+			left: 98px;
+			top: 15px;
+			position: absolute;
 		}
 		.circle-container,
 		.circle {
@@ -149,11 +156,19 @@ label {
 	}
 	.groomsman {
 		margin-top: 10px;
+		position: relative;
 		
 		.name {
 			color: #666;
 			text-shadow: 1px 1px #fff;
 			line-height: 50px;
+		}
+		.best {
+			right: 98px;
+			top: 15px;
+			position: absolute;
+			display: block;
+			font-size: 10px;
 		}
 		.circle-container,
 		.circle {
