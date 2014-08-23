@@ -134,7 +134,6 @@ label {
 	}
 	.bridesmaid {
 		margin-top: 10px;
-		position: relative;
 		
 		.name {
 			color: #666;
@@ -142,10 +141,15 @@ label {
 			line-height: 50px;
 		}
 		.best {
+			white-space: nowrap;
+			clear: both;
+			width: 50px;
+			float: left;
+			display: block;
+			text-align: center;
 			font-size: 10px;
 			left: 98px;
 			top: 15px;
-			position: absolute;
 		}
 		.circle-container,
 		.circle {
@@ -156,7 +160,6 @@ label {
 	}
 	.groomsman {
 		margin-top: 10px;
-		position: relative;
 		
 		.name {
 			color: #666;
@@ -164,9 +167,14 @@ label {
 			line-height: 50px;
 		}
 		.best {
+			white-space: nowrap;
+			clear: both;
+			width: 50px;
+			float: right;
+			display: block;
+			text-align: center;
 			right: 98px;
 			top: 15px;
-			position: absolute;
 			display: block;
 			font-size: 10px;
 		}
@@ -282,6 +290,7 @@ a.pure-button-primary {
 .splash-container {
 	background: url(/img/banner.jpg) no-repeat center center fixed;
 	background-size: cover;
+	background-attachment: scroll;
 	z-index: 1;
 	overflow: hidden;
 	/* The following styles are required for the "scroll-over" effect */

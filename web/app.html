@@ -46,13 +46,13 @@
 								<span class="firstname">???</span>
 								<span class="lastname">???</span>
 							</span>
-							<span class="best" ng-show="groomsman.best">Best Man</span>
 						</span>
 						<div class="circle-container">
 							<div class="circle" ng-if="groomsman.accepted && groomsman.username" ng-style="{'background-image': 'url(http://avatars.io/' + groomsman.social + '/' + groomsman.username + '?size=large)'}"></div>
 							<div class="circle" ng-if="!groomsman.accepted || !groomsman.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg)'}"></div>
 							<i ng-if="groomsman.accepted" class="tick fa fa-check-circle"></i>
 						</div>
+						<div class="best" ng-show="groomsman.best">Best Man</div>
 					</div>
 					<div class="pure-u-1-24"></div>
 				</div>
@@ -77,13 +77,13 @@
 								<span class="firstname">???</span>
 								<span class="lastname">???</span>
 							</span>
-							<span class="best" ng-show="bridesmaid.best">Maid of Honor</span>
 						</span>
 						<div class="circle-container">
 							<div class="circle" ng-if="bridesmaid.accepted && bridesmaid.username" ng-style="{'background-image': 'url(http://avatars.io/' + bridesmaid.social + '/' + bridesmaid.username + '?size=large)'}"></div>
 							<div class="circle" ng-if="!bridesmaid.accepted || !bridesmaid.username" ng-style="{'background-image': 'url(img/blank-avatar.jpg)'}"></div>
 							<i ng-if="bridesmaid.accepted" class="tick fa fa-check-circle"></i>
 						</div>
+						<div class="best" ng-show="bridesmaid.best">Maid of Honor</div>
 					</div>
 				</div>
 			</div>
