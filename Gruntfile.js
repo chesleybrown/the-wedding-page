@@ -87,6 +87,12 @@ module.exports = function(grunt) {
 				files: {
 					'build/css/compiled/app.css': [
 						'build/css/compiled/app.css'
+					],
+					'build/css/compiled/pure-min.css': [
+						'web/components/pure/pure-min.css'
+					],
+					'build/css/compiled/grids-responsive-min.css': [
+						'web/components/pure/grids-responsive-min.css'
 					]
 				}
 			}
