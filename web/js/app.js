@@ -92,7 +92,7 @@ angular
 		// 	accepted: false
 		// });
 		// groomsmen.$push({
-		// 	fistname: 'Ern',
+		// 	firstname: 'Ern',
 		// 	lastname: 'Way',
 		// 	username: 'ern.way.7',
 		// 	social: 'facebook',
