@@ -31,6 +31,10 @@ label {
 	color: #34495e;
 }
 
+h3,h4,h5 {
+	margin: 0.1em 0 0.2em;
+}
+
 .pure-img-responsive {
 	max-width: 100%;
 	height: auto;
@@ -358,7 +362,7 @@ h1.splash-head {
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	margin: 2em 0 1em;
+	margin: 2em 0 0.1em;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -379,6 +383,18 @@ h1.splash-head {
 .ribbon {
 	background: #2d3e50;
 	color: #aaa;
+	
+	h3,h4,h5 {
+		color: #83A7CE;
+		font-weight: normal;
+	}
+	
+	a {
+		color: #4B6786;
+		text-decoration: none;
+		font-weight: normal;
+		font-style: italic;
+	}
 }
 
 /* This is the class used for the footer */
@@ -405,6 +421,12 @@ h1.splash-head {
 		p {
 			text-align: center;
 		}
+	}
+}
+
+a.map {
+	img {
+		border-radius: 75px;
 	}
 }
 

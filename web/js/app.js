@@ -21,6 +21,18 @@ angular
 	.controller('AppCtrl', function ($scope, $routeParams, $firebase, API_URL) {
 		var ref;
 		
+		$scope.ceremony = {
+			name: 'Bernice & Keith White\'s Home',
+			location: '17 Crowe\'s Ln Torbay Newfoundland Canada',
+			time: 'Time of Day TBD'
+		};
+		$scope.reception = {
+			name: 'Bella Vista',
+			location: 'Bella Vista Event Room, 24 Torbay Road, St. John\'s, NL A1A 2G3',
+			time: 'Time of Day TBD',
+			link: 'http://bellavista.ca'
+		};
+		
 		var check = function () {
 			if ($routeParams.username) {
 				if ($routeParams.party === 'groomsmen') {
