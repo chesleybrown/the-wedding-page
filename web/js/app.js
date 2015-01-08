@@ -73,44 +73,44 @@ angular
 		// 	username: 'jared_perry',
 		// 	social: 'twitter',
 		// 	best: true,
-		// 	accepted: false
-		// });
-		// groomsmen.$push({
-		// 	firstname: 'Donal',
-		// 	lastname: 'Mac An Ri',
-		// 	username: 'donalmacanri',
-		// 	social: 'facebook',
-		// 	accepted: false
+		// 	accepted: true
 		// });
 		// groomsmen.$push({
 		// 	firstname: 'Stephen',
 		// 	lastname: 'Brown',
 		// 	username: 'stephenbrown84',
 		// 	social: 'facebook',
-		// 	accepted: false
+		// 	accepted: true
+		// });
+		// groomsmen.$push({
+		// 	firstname: 'Donal',
+		// 	lastname: 'Mac An Ri',
+		// 	username: 'donalmacanri',
+		// 	social: 'facebook',
+		// 	accepted: true
 		// });
 		// groomsmen.$push({
 		// 	firstname: 'Zachary',
 		// 	lastname: 'Brown',
 		// 	username: 'Zach.D.Brown',
 		// 	social: 'facebook',
-		// 	accepted: false
+		// 	accepted: true
 		// });
 		// groomsmen.$push({
 		// 	firstname: 'Randy',
 		// 	lastname: 'Way',
 		// 	username: 'Rway6',
 		// 	social: 'facebook',
-		// 	accepted: false
+		// 	accepted: true
 		// });
 		// groomsmen.$push({
 		// 	firstname: 'Ern',
 		// 	lastname: 'Way',
 		// 	username: 'ern.way.7',
 		// 	social: 'facebook',
-		// 	accepted: false
+		// 	accepted: true
 		// });
-		
+		// 
 		// bridesmaids.$push({
 		// 	firstname: 'Deanna',
 		// 	lastname: 'Way',
@@ -120,23 +120,9 @@ angular
 		// 	accepted: true
 		// });
 		// bridesmaids.$push({
-		// 	firstname: 'Tamara',
-		// 	lastname: 'Way',
-		// 	username: 'tamara.macdonald.9',
-		// 	social: 'facebook',
-		// 	accepted: false
-		// });
-		// bridesmaids.$push({
 		// 	firstname: 'Kayla',
 		// 	lastname: 'Gould',
 		// 	username: 'kayla.white.37454',
-		// 	social: 'facebook',
-		// 	accepted: false
-		// });
-		// bridesmaids.$push({
-		// 	firstname: 'Melissa',
-		// 	lastname: 'Beresford',
-		// 	username: 'melissakberesford',
 		// 	social: 'facebook',
 		// 	accepted: true
 		// });
@@ -148,9 +134,23 @@ angular
 		// 	accepted: true
 		// });
 		// bridesmaids.$push({
+		// 	firstname: 'Melissa',
+		// 	lastname: 'Beresford',
+		// 	username: 'melissakberesford',
+		// 	social: 'facebook',
+		// 	accepted: true
+		// });
+		// bridesmaids.$push({
 		// 	firstname: 'Emma',
 		// 	lastname: 'Brown',
 		// 	username: 'emma.brown.7967',
+		// 	social: 'facebook',
+		// 	accepted: true
+		// });
+		// bridesmaids.$push({
+		// 	firstname: 'Laura',
+		// 	lastname: 'Williams',
+		// 	username: '605080095',
 		// 	social: 'facebook',
 		// 	accepted: true
 		// });
