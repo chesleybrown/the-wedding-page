@@ -24,12 +24,12 @@ angular
 		$scope.ceremony = {
 			name: 'Bernice & Keith White\'s Home',
 			location: '17 Crowe\'s Ln Torbay Newfoundland Canada',
-			time: 'Time of Day TBD'
+			time: 'at 3 in the afternoon'
 		};
 		$scope.reception = {
 			name: 'Bella Vista',
 			location: 'Bella Vista Event Room, 24 Torbay Road, St. John\'s, NL A1A 2G3',
-			time: 'Time of Day TBD',
+			time: 'at half past 7 in the evening',
 			link: 'http://bellavista.ca'
 		};
 		
